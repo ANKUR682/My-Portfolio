@@ -1,0 +1,616 @@
+@font-face {
+  font-family: cube;
+  src: url(./assest/matter-light.woff2);
+}
+@font-face {
+  font-family: manrope;
+  src: url(./assest/Manrope-VariableFont_wght.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* {
+  user-select: none;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+::selection {
+  color: #fff;
+  background-color: #deb97d;
+}
+.cursor {
+  height: 2vh;
+  font-size: 0.2vw;
+  position: fixed;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2vh;
+  color: #141515;
+  background-color: #f39c12;
+  border-radius: 50px;
+}
+body {
+  background-color: #212225;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  display: flex;
+  background-color: #212225;
+  justify-content: space-between;
+  padding: 20px 50px;
+  align-items: center;
+}
+
+.logo {
+  color: #f39c12;
+  font-weight: bold;
+  font-size: 2vw;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  cursor: pointer;
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding: 5px 10px;
+  display: inline-block;
+  transition: transform 0.5s ease;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li:hover {
+  transform: scale(1.5);
+}
+nav ul li:hover a {
+  color: #f39c12;
+}
+
+.loader {
+  height: 100vh;
+  width: 100vw;
+  z-index: 999;
+  background-color: hsl(180, 8%, 7%);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loader .ankur {
+  font-size: 3vw;
+  color: #f39c12;
+  font-weight: 800;
+}
+.bg {
+  background-color: #212225;
+  height: 90vh;
+  position: relative;
+}
+.circlebg {
+  height: 48vw;
+  width: 50vw;
+  background-color: #322a2a4c;
+  margin-left: 25vw;
+  padding-top: 3.7vw;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.circlebg img {
+  height: 55vw;
+  padding-top: 1vw;
+  padding-left: 7vw;
+  z-index: 2;
+}
+.iam {
+  font-size: 10vw;
+  padding-left: 5vw;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  position: absolute;
+}
+.ankursingh {
+  font-size: 13vw;
+  padding-top: 15vw;
+  font-weight: 700;
+  color: #f39c12;
+  z-index: 1;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  letter-spacing: 1vw;
+  padding-left: 3vw;
+  position: absolute;
+}
+
+.page2 {
+  height: 120vh;
+  background-color: #212225;
+  border-top: 12px solid black;
+}
+.hi {
+  font-size: 9vw;
+  padding-left: 55vw;
+  font-weight: 700;
+  color: #f39c12;
+}
+.pg2content .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 90vh;
+  width: 40vw;
+}
+.pg2content {
+  display: flex;
+}
+.pg2content .right {
+  border-top: 2px solid wheat;
+  font-size: 2vw;
+  height: 84vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 60vw;
+  letter-spacing: 0.2vw;
+  font-weight: 100;
+  padding: 8vw 3vw;
+}
+.page3 {
+  height: 383vh;
+  background-color: #212225;
+}
+.pg2content .left .image {
+  height: 50vh;
+  width: 50vh;
+  border-radius: 50%;
+}
+
+.image img {
+  height: 100%;
+  border-radius: 50%;
+  width: 100%;
+  object-fit: cover;
+}
+.pg2content .right .right2 {
+  padding-top: 3vw;
+  display: flex;
+}
+.pg2content .right .right2 .place {
+  color: #f39c12;
+}
+.pg2content .left a button {
+  cursor: pointer;
+}
+.slide-fill {
+  margin-top: 3vw;
+  position: relative;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 3vw;
+  border: 0.2px solid orange;
+  background: transparent;
+  overflow: hidden;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.4s ease;
+  z-index: 1;
+}
+
+.slide-fill {
+  margin-top: 3vw;
+  position: relative;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 3vw;
+  border: 0.2px solid orange;
+  background: transparent;
+  overflow: hidden;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.4s ease;
+  z-index: 1;
+}
+
+.slide-fill::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: orange;
+  transition: left 0.4s ease;
+  z-index: -1;
+}
+
+.slide-fill:hover::before {
+  left: 0;
+}
+
+.slide-fill:hover {
+  color: black; 
+}
+.parallax-container {
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 16px;
+  position: relative;
+  perspective: 800px;
+}
+.layer {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translateZ(0);
+  transition: transform 0.3s ease;
+}
+
+.move {
+  height: 18vh;
+  background-color: #f39c12;
+  width: 100%;
+}
+.element img {
+  padding: 1vw 0.8vw;
+  height: 9vw;
+}
+.element h1 {
+  font-size: 9vw;
+  font-weight: 900;
+  font-family: manrope;
+  padding-left: 2vw;
+  color: #212225;
+}
+.element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  padding-top: 2vw;
+  background-color: #f39c12;
+  gap: 2vw;
+  flex-shrink: 0;
+  transform: translateX(-50%);
+}
+.move {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.htmlcard {
+  height: 35vh;
+  width: 35vw;
+}
+.img {
+  height: 40vh;
+}
+.img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50px;
+  transition: transform 0.6s ease;
+}
+.slider {
+  height: 100vh;
+  width: 400vw;
+  align-items: center;
+  background-color: #212225;
+
+  gap: 2vw;
+  display: flex;
+}
+
+.page4 {
+  height: 100vh;
+}
+.skillcard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page3 .left {
+  display: flex;
+  flex-direction: column;
+  gap: 10vw;
+  height: 400vh;
+  width: 50vw;
+  margin: 10vw 0vw;
+  padding: 10vw 8vw;
+}
+.page3 .right {
+  padding: 20vw 8vw;
+  display: flex;
+  flex-direction: column;
+  gap: 10vw;
+  height: 400vh;
+  width: 50vw;
+  margin: 10vw 0vw;
+}
+
+.img:hover img {
+  transform: scale(1.1);
+}
+
+.page4 .slider .project {
+  height: 100vh;
+  width: 180vw;
+  background-color: #212225;
+
+  font-size: 40vw;
+  font-weight: 600;
+  color: #f39c12;
+}
+
+.page5 {
+  height: 160vh;
+  background-color: #212225;
+}
+.netflix {
+  height: 64vh;
+  background-color: #212225;
+  flex-shrink: 0;
+  width: 50vw;
+}
+.netflix video {
+  height: 40vh;
+  border-radius: 50px;
+  margin: 2vw 7vw;
+}
+.netflix p {
+  padding: 2vw 8vw;
+  font-size: 2vw;
+}
+.education {
+  color: #f39c12;
+  font-size: 10vw;
+  font-weight: 700;
+  border-bottom: 0.2px solid rgb(208, 208, 208);
+  padding: 0vw 2vw;
+  padding-top: 15vw;
+}
+.edcard {
+  padding: 10vw 5vw;
+  height: 100vh;
+  display: flex;
+  gap: 8vw;
+}
+.school:hover {
+  transform: translate(-10px, -10px);
+  box-shadow: 20px 20px 0px black;
+}
+
+.school {
+  height: 50vh;
+  width: 40vh;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: #1f1f20;
+}
+.imgaesch img {
+  height: 100%;
+  width: 99.6%;
+  object-fit: cover;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.imgaesch {
+  height: 30vh;
+  width: 40vh;
+}
+.school h3 {
+  color: #f39c12;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-top: 2.5vw;
+  font-size: 1.5vw;
+}
+.school h4 {
+  font-weight: 100;
+  padding: 0.5vw 3.5vw;
+  font-size: 1.5vw;
+}
+.school h5 {
+  font-weight: 100;
+  padding: 0.3vw 4.6vw;
+  font-size: 1vw;
+}
+
+.chakeri:hover {
+  transform: translate(-10px, -10px);
+  box-shadow: 20px 20px 0px black;
+}
+
+.chakeri {
+  height: 50vh;
+  width: 40vh;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: #1f1f20;
+}
+.imgaecha img {
+  height: 100%;
+  width: 99.6%;
+  object-fit: cover;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.imgaecha {
+  height: 30vh;
+  width: 40vh;
+}
+.chakeri h3 {
+  color: #f39c12;
+  padding-left: 1.4vw;
+  padding-right: 1vw;
+  padding-top: 2.5vw;
+  font-size: 1.4vw;
+}
+.chakeri h4 {
+  font-weight: 100;
+  padding: 0.5vw 2vw;
+  font-size: 1.5vw;
+}
+.chakeri h5 {
+  font-weight: 100;
+  padding: 0.3vw 4.6vw;
+  font-size: 1vw;
+}
+.iit:hover {
+  transform: translate(-10px, -10px);
+  box-shadow: 20px 20px 0px black;
+}
+
+.iit {
+  height: 50vh;
+  width: 40vh;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: #1f1f20;
+}
+.imgaeiit img {
+  height: 100%;
+  width: 99.6%;
+  object-fit: cover;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.imgaeiit {
+  height: 30vh;
+  width: 40vh;
+}
+.iit h3 {
+  color: #f39c12;
+  text-align: center;
+  padding-top: 2vw;
+  font-size: 1.3vw;
+}
+.iit p {
+  color: #f39c12;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.3vw;
+}
+.iit h4 {
+  font-weight: 100;
+  padding: 0.5vw 2.2vw;
+  font-size: 1.2vw;
+}
+.iit h5 {
+  font-weight: 100;
+  padding: 0.3vw 5.6vw;
+  font-size: 1vw;
+}
+
+.page6 {
+  height: 70vh;
+  background-color: #141515;
+}
+.page6 .thanks {
+  color: #f39c12;
+  text-align: center;
+  font-weight: 900;
+  font-size: 8vw;
+}
+.footer {
+  padding: 4vw 0px;
+  height: 50vh;
+  display: flex;
+  justify-content: space-around;
+}
+.links,
+.connectwithme,
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+.links a,
+.connectwithme a,
+.contact a {
+  text-decoration: none;
+  font-size: 1.2vw;
+  font-weight: 100;
+  transition: all 0.3s ease;
+  color: #ffffff;
+}
+.links li {
+  transition: all 0.3s ease;
+}
+.connectwithme li {
+  transition: all 0.3s ease;
+}
+.contact a:hover {
+  color: #f39c12;
+  scale: 1.1;
+}
+.connectwithme li:hover {
+  color: #f39c12;
+  scale: 1.1;
+}
+.connectwithme li:hover a {
+  color: #f39c12;
+}
+.links li:hover {
+  color: #f39c12;
+  scale: 1.1;
+}
+.links li:hover a {
+  color: #f39c12;
+}
+.contact p {
+  color: #ffffff;
+  font-weight: 100;
+  font-size: 1.2vw;
+  transition: all 0.3s ease;
+}
+.contact p:hover {
+  color: #f39c12;
+  scale: 1.1;
+}
+.links h2,
+.connectwithme h2,
+.contact h2 {
+  font-size: 2vw;
+  color: #f39c12;
+}
+.htmlcard p{
+  text-align: center;
+  color: white;
+  font-size: 2vw;
+  padding-top: 2vw;
+  font-family: manrope;
+  font-weight: 100;
+  letter-spacing: 0.2vw;
+}
